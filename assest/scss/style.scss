@@ -1,0 +1,39 @@
+// media query to fix navbar menu
+@import "../scss/bootsrap.scss";
+@media screen and (max-width: 992px) {
+  .custom-navbar-menu {
+    display: none !important;
+  }
+}
+// delete default style of navbar toggler
+.custom-btn-navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.custom-btn-navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+// custom close btn
+.off-close-btn {
+  --bs-btn-close-color: $primary !important;
+}
+// stickey navbar
+.custom-navbar-brand img {
+  transition: all 0.5s ease;
+}
+.social-media {
+  span {
+    span {
+      a {
+        i {
+          transition: all 0.5s ease;
+          font-size: 34px;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
