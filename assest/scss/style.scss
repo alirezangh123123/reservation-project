@@ -1,5 +1,8 @@
 // media query to fix navbar menu
 @import "../scss/bootsrap.scss";
+.nav-custom{
+    transition: all .5s ease;
+}
 @media screen and (max-width: 992px) {
   .custom-navbar-menu {
     display: none !important;
@@ -36,4 +39,35 @@
       }
     }
   }
+}
+/////////header////////////
+header {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/header-background.jpg) center center no-repeat;
+    background-size: cover;
+}
+.btn-wrapper button:last-child{
+    transition: all .5s ease;
+    &:hover{
+        background-color: $light !important;
+        color: $dark !important;
+    }
+}
+// media query for image-slider
+@media screen and (max-width:578px) {
+      .carousel-container{
+        #carouselExampleAutoplaying{
+           .carousel-inner{
+            .carousel-item{
+                img{
+                    height: 260px;
+                }
+            }
+           } 
+        }
+      }  
 }

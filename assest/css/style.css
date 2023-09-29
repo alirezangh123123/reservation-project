@@ -14240,6 +14240,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-custom {
+  transition: all 0.5s ease;
+}
+
 @media screen and (max-width: 992px) {
   .custom-navbar-menu {
     display: none !important;
@@ -14269,4 +14273,23 @@ textarea.form-control-lg {
   transition: all 0.5s ease;
   font-size: 34px;
   color: #f8b547;
+}
+
+header {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.btn-wrapper button:last-child {
+  transition: all 0.5s ease;
+}
+.btn-wrapper button:last-child:hover {
+  background-color: #fbf9f5 !important;
+  color: #212529 !important;
+}
+
+@media screen and (max-width: 578px) {
+  .carousel-container #carouselExampleAutoplaying .carousel-inner .carousel-item img {
+    height: 260px;
+  }
 }
