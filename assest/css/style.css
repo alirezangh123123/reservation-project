@@ -14293,3 +14293,30 @@ header {
     height: 260px;
   }
 }
+@media screen and (max-width: 425px) {
+  .btn-wrapper .btn-header {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: .8rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+  }
+  .btn-submit-wrapper .btn-register {
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: .7rem;
+    --bs-btn-font-size: .8rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+  }
+  .register-form form input {
+    margin-top: 1.1rem !important;
+    margin-bottom: 1.1rem !important;
+  }
+  .register-form form .check-box input {
+    vertical-align: middle;
+  }
+  .form-control {
+    min-height: calc(1.4rem + var(--bs-border-width) * 2);
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: var(--bs-border-radius-lg);
+  }
+}
