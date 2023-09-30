@@ -14297,13 +14297,13 @@ header {
   .btn-wrapper .btn-header {
     --bs-btn-padding-y: 0.5rem;
     --bs-btn-padding-x: 1rem;
-    --bs-btn-font-size: .8rem;
+    --bs-btn-font-size: 0.8rem;
     --bs-btn-border-radius: var(--bs-border-radius-lg);
   }
   .btn-submit-wrapper .btn-register {
     --bs-btn-padding-y: 0.5rem;
-    --bs-btn-padding-x: .7rem;
-    --bs-btn-font-size: .8rem;
+    --bs-btn-padding-x: 0.7rem;
+    --bs-btn-font-size: 0.8rem;
     --bs-btn-border-radius: var(--bs-border-radius-lg);
   }
   .register-form form input {
