@@ -14330,3 +14330,11 @@ header {
     border-radius: 0px !important;
   }
 }
+.footer .footer-socail-link .footer-icon-wrapper i {
+  color: #fbf9f5 !important;
+  transition: all 0.3s ease;
+  border-radius: 1px;
+}
+.footer .footer-socail-link .footer-icon-wrapper i:hover {
+  color: #f8b547 !important;
+}
