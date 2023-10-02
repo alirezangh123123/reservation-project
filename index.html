@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assest/css/fontawesome.css" />
     <link rel="stylesheet" href="assest/css/style.css" />
   </head>
-  <body>
+  <body id="home">
     <!-- add navabar menu -->
 
     <nav class="navbar navbar-expand-md nav-custom fixed-top navbar-dark">
@@ -41,16 +41,16 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Discover</a>
+              <a class="nav-link" href="#discover">Discover</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Summary</a>
+              <a class="nav-link" href="#summary">Summary</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Takeaways</a>
+              <a class="nav-link" href="#takeaways">Takeaways</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
+              <a class="nav-link" href="#subscribe">Subscribe</a>
             </li>
             <li class="nav-itam d-flex align-items-center social-media">
               <span class="nav-item text-white mx-2">
@@ -298,7 +298,7 @@
       </div>
     </section>
     <!-- add-discover-section -->
-    <section class="discover bg-light mt-5 mt-md-7">
+    <section id="discover" class="discover bg-light mt-5 mt-md-7">
       <div class="container">
         <div class="row hstack g-4">
           <div class="col-lg-6 my-auto">
@@ -438,7 +438,7 @@
       </div>
     </section>
     <!-- course summary section -->
-    <section class="course-summary bg-light mt-4 mt-md-7">
+    <section id="summary" class="course-summary bg-light mt-4 mt-md-7">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center my-4">
@@ -539,7 +539,7 @@
       </div>
     </section>
     <!-- add takeaway section -->
-    <section class="bg-light mt-5 mt-md-7">
+    <section id="takeaways" class="bg-light mt-5 mt-md-7">
       <div class="container">
         <div class="row text-center">
           <div class="col-12 txt-container">
@@ -550,7 +550,9 @@
             </p>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-atom fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
@@ -562,7 +564,9 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-key fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
@@ -575,7 +579,9 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-newspaper fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
@@ -587,8 +593,10 @@
               </p>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+          <div id="subscribe" class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-users fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
@@ -601,12 +609,14 @@
             </div>
           </div>
           <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-handshake fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
               <h5 class="card-title">Partnership Opportunities</h5>
-              <p class="card-text ">
+              <p class="card-text">
                 Discover potential partnership opportunities with like-minded
                 individuals and organizations, opening doors to new
                 collaborations and ventures.
@@ -615,7 +625,9 @@
           </div>
 
           <div class="col-md-4 mb-3">
-            <div class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
               <i
                 class="fas fa-chart-bar fa-3x text-primary bg-light rounded-circle p-3 my-4"
               ></i>
@@ -632,23 +644,106 @@
     </section>
     <!-- add subscribe section -->
     <section class="bg-light mt-6">
-      <div class="container ">
+      <div class="container">
         <div class="row">
           <div class="col-md-6 offset-md-3 text-center">
-            <h2>Subscribe to our email list and get updates from the experts</h2>
+            <h2>
+              Subscribe to our email list and get updates from the experts
+            </h2>
             <div class="register-form my-4">
-              <form >
-                <input type="email" class="form-control form-control-lg" placeholder="Enter email">
-                <div class="form-text">We will never share your email address</div>
+              <form>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter email"
+                />
+                <div class="form-text">
+                  We will never share your email address
+                </div>
               </form>
             </div>
             <div class="btn-submit-wrapper d-grid mb-4">
-              <button class="btn-register btn btn-primary btn-lg rounded-5 ">Subscribe</button>
+              <button class="btn-register btn btn-primary btn-lg rounded-5">
+                Subscribe
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- add footer  -->
+    <footer class="footer text-bg-dark mt-4 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="txt-container">
+              <h4 class="text-center text-primary">about us</h4>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <p>
+                    1.About Us: Learn more about our mission and the story
+                    behind our delicious takeaway options.
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p>
+                    2. Menu: Browse through our mouth-watering menu filled with
+                    a variety of cuisines to satisfy your cravings.
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p>
+                    3. Order Online: Conveniently place your order online and
+                    enjoy the ease of takeaway at your fingertips.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="quik-links d-flex flex-column justify-content-center align-items-start"
+            >
+              <h4 class="text-center text-primary">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#home">home</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#discover">Discover</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#summary">summary</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#takeaways"
+                    >Takeaways</a
+                  >
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#subscribe"
+                    >Subscribe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-socail-link d-flex flex-column gap-2">
+              <h4 class="text-center text-primary">Connect</h4>
+              <div class="footer-icon-wrapper mt-4">
+                <i class="fab fa-facebook fa-3x text-white mx-2"></i>
+                <i class="fab fa-twitter fa-3x text-white mx-2"></i>
+                <i class="fab fa-linkedin fa-3x text-white mx-2"></i>
+                <i class="fab fa-instagram fa-3x text-white mx-2"></i>
+                <i class="fab fa-youtube fa-3x text-white mx-2 mt-3"></i>
+                <i class="fab fa-threads fa-3x text-white mx-2 mt-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="assest/js/bootstrap.bundle.min.js"></script>
     <script src="assest/js/main.js"></script>
   </body>

@@ -131,4 +131,18 @@ header {
     }
   }
 }
-
+// footer style 
+.footer{
+  .footer-socail-link{
+    .footer-icon-wrapper{
+      i{
+        color:$light !important;
+        transition: all .3s ease;
+        border-radius: 1px;
+        &:hover{
+          color:$primary !important;
+        }
+      }
+    }
+  }
+}
