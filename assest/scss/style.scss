@@ -1,5 +1,9 @@
 // media query to fix navbar menu
-@import "../scss/bootsrap.scss";
+$primary: #f8b547;
+$secondary: #35353a;
+$light: #fbf9f5;
+$body-bg: $light;
+$dark: #343a40;
 .nav-custom {
   transition: all 0.5s ease;
 }
