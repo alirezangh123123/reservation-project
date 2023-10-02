@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carso reservation page</title>
+    <link rel="stylesheet" href="assest/css/bootsrap.css" />
+    <link rel="stylesheet" href="assest/css/fontawesome.css" />
+    <link rel="stylesheet" href="assest/css/style.css" />
+  </head>
+  <body id="home">
+    <!-- add navabar menu -->
+
+    <nav class="navbar navbar-expand-md nav-custom fixed-top navbar-dark">
+      <div class="container d-flex">
+        <a href="#" class="navbar-brand custom-navbar-brand">
+          <img
+            src="assest/images/logo.png"
+            alt="carso-logo"
+            class="navbar-brand img-fluid"
+            style="height: 43px"
+        /></a>
+
+        <button
+          class="navbar-toggler custom-btn-navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse custom-navbar-menu navbar-collapse d-flex align-items-center justify-content-end d-sm-none d-lg-flex"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#discover">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#summary">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#takeaways">Takeaways</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#subscribe">Subscribe</a>
+            </li>
+            <li class="nav-itam d-flex align-items-center social-media">
+              <span class="nav-item text-white mx-2">
+                <span class="fa-stack">
+                  <a href="#" class="d-flex flex-row">
+                    <i class="fab fa-square-facebook fa-stack-2x"></i>
+                  </a>
+                </span>
+              </span>
+              <span class="nav-item text-white mx-2">
+                <span class="fa-stack">
+                  <a href="#" class="d-flex flex-row">
+                    <i class="fab fa-circle fa-square-twitter fa-stack-2x"></i>
+                  </a>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel"
+    >
+      <div class="offcanvas-header navbar-dark bg-dark">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+          <a href="#" class="navbar-brand">
+            <img
+              src="assest/images/logo.png"
+              alt="carso-logo"
+              class="navbar-brand img-fluid"
+              style="height: 44px"
+          /></a>
+        </h5>
+        <button
+          type="button"
+          class="btn-close off-close-btn"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body bg-dark text-white">
+        <div
+          class="collapse navbar-collapse d-flex align-items-center"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Discover</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Summary</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Takeaways</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Subscribe</a>
+            </li>
+            <li class="nav-item d-flex social-icons mt-3 ms-auto">
+              <span class="nav-item text-white mx-2">
+                <span class="fa-stack">
+                  <a href="#" class="d-flex flex-row">
+                    <i class="fab fa-circle fa-facebook fa-stack-2x"></i>
+                  </a>
+                </span>
+              </span>
+              <span class="nav-item text-white mx-2">
+                <span class="fa-stack">
+                  <a href="#" class="d-flex flex-row">
+                    <i class="fab fa-circle fa-twitter fa-stack-2x"></i>
+                  </a>
+                </span>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- add hero header -->
+    <header class="header py-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="txt-container">
+              <h1 class="display-1 text-white mt-5 fw-bolder">
+                Explore Our Training and Seminar Videos
+              </h1>
+              <p class="lead text-white text-center px-sm-3 px-lg-8 pt-5">
+                Whether you're a beginner or an experienced professional, our
+                carefully curated content will empower you to enhance your
+                skills and expand your knowledge
+              </p>
+            </div>
+            <div class="btn-wrapper">
+              <button
+                class="btn btn-primary btn-lg mt-3 text-uppercase mx-3 btn-header"
+              >
+                Register
+              </button>
+              <button
+                class="btn btn-outline-light text-white btn-lg mt-3 text-uppercase mx-3 btn-header"
+              >
+                discover
+              </button>
+            </div>
+            <div class="carousel-container mt-6 px-xl-8">
+              <div
+                id="carouselExampleAutoplaying"
+                class="carousel slide"
+                data-bs-ride="carousel"
+                data-bg-touch="true"
+              >
+                <div class="carousel-inner rounded-5">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img
+                      src="assest/images/header-slide-1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img
+                      src="assest/images/header-slide-2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item" data-bs-interval="4000">
+                    <img
+                      src="assest/images/header-slide-3.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev btn-header"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleAutoplaying"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- add register form -->
+    <section class="register-form bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="txt-container">
+              <h2 class="text-dark py-4">
+                Unlock Your Potential with Engaging Content
+              </h2>
+              <p>
+                Our wide range of training and seminar videos are designed to
+                empower you with valuable knowledge and skills.
+              </p>
+              <ul class="list-unstyled">
+                <li>
+                  <i class="fas fa-square"></i> <strong>Gain Expertise:</strong>
+                  <p>
+                    Our videos provide in-depth insights and practical tips to
+                    enhance your expertise in various domains.
+                  </p>
+                </li>
+                <li>
+                  <i class="fas fa-square"></i> <strong>Stay Updated:</strong>
+                  <p>
+                    Stay up-to-date with the latest industry trends and
+                    advancements through our informative and up-to-date videos.
+                  </p>
+                </li>
+                <li>
+                  <i class="fas fa-square"></i>
+                  <strong> Expand Your Network:</strong>
+                  <p>
+                    Connect with like-minded individuals and industry experts,
+                    fostering new connections and opportunities.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-6 my-auto">
+            <form class="vstack">
+              <input
+                type="text"
+                class="form-control form-control-lg rounded-0 border-0 my-4"
+                placeholder="Enter name"
+              />
+              <input
+                type="email"
+                class="form-control form-control-lg rounded-0 border-0 my-4"
+                placeholder="Enter email"
+              />
+              <input
+                type="tel"
+                class="form-control form-control-lg rounded-0 border-0 my-4"
+                placeholder="Enter phone number"
+              />
+              <div class="check-box">
+                <input type="checkbox" class="form-check-input" id="check" />
+                <label for="check" class="form-check-label ms-3"
+                  >I agree to the terms and conditions</label
+                >
+              </div>
+              <div class="submit d-grid mt-4 btn-submit-wrapper">
+                <button
+                  class="btn btn-lg rounded-5 btn-primary btn-outline-dark btn-register mb-4 mb-lg-1"
+                >
+                  Register
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add-discover-section -->
+    <section id="discover" class="discover bg-light mt-5 mt-md-7">
+      <div class="container">
+        <div class="row hstack g-4">
+          <div class="col-lg-6 my-auto">
+            <div class="img-container">
+              <img
+                src="assest/images/instructor.jpg"
+                alt="instructor"
+                class="img-fluid rounded-5 py-4"
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 my-auto">
+            <div class="txt-container">
+              <h2 class="fw-bold">
+                Enhance Your Skills with Engaging Training Videos
+              </h2>
+              <p>
+                Our extensive collection of training videos is designed to help
+                you enhance your skills and excel in your chosen field. Whether
+                you're looking to improve your technical expertise or develop
+                essential soft skills, our videos provide valuable insights and
+                practical knowledge.
+              </p>
+              <p>
+                With expert instructors and comprehensive content, you'll gain
+                the confidence and competence to tackle challenges and achieve
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- deail-value-bussiness -->
+    <section class="value-bussiness bg-light mt-4 mt-md-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 text-center offset-md-2">
+            <h1 class="fw-bold">
+              Unlock Your Potential with Engaging Training Videos
+            </h1>
+          </div>
+        </div>
+        <div class="row mt-5 justify-content-center">
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">1</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Enhance Your Skills</h3>
+                <p>
+                  Enhance Your Skills Our training videos provide comprehensive
+                  insights and practical tips to help you enhance your skills in
+                  various domains. From technical expertise to soft skills,
+                  we've got you covered.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">2</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Stay Updated</h3>
+                <p>
+                  Keep pace with the latest industry trends and advancements
+                  through our informative and up-to-date videos. Stay ahead of
+                  the curve and broaden your knowledge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">3</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Connect with Experts</h3>
+                <p>
+                  Our platform allows you to connect with like-minded
+                  individuals and industry experts. Expand your network, foster
+                  new connections, and unlock new opportunities
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">4</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Flexible Learning</h3>
+                <p>
+                  Our training videos are available on-demand, allowing you to
+                  learn at your own pace and convenience. Access the content
+                  anytime, anywhere, and tailor your learning experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">5</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Practical Knowledge</h3>
+                <p>
+                  Gain practical knowledge and apply it directly to real-world
+                  scenarios. Our videos offer hands-on insights and practical
+                  tips to help you succeed in your professional endeavors.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="d-flex gap-3">
+              <div class="number">
+                <span class="bg-primary py-1 px-3 fs-3 rounded-circle">6</span>
+              </div>
+              <div class="subscription">
+                <h3 class="fs-4">Continuous Learning</h3>
+                <p>
+                  Lifelong learning is key to personal and professional growth.
+                  Explore a vast collection of training videos and embark on a
+                  journey of continuous learning and self-improvement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- course summary section -->
+    <section id="summary" class="course-summary bg-light mt-4 mt-md-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center my-4">
+            <h1 class="fw-bold">Course Summary</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 list-wrapper">
+            <div class="bg-white p-5 rounded-2">
+              <ul class="list-unstyled">
+                <li class="border-bottom pb-3 mt-3">
+                  <h5>1. Comprehensive Training</h5>
+                  <p>
+                    Our courses provide comprehensive training in a wide range
+                    of topics. From beginner-level fundamentals to advanced
+                    concepts, we offer in-depth content to cater to learners of
+                    all levels.
+                  </p>
+                </li>
+                <li class="border-bottom pb-3 mt-3">
+                  <h5>2. Expert Instructors</h5>
+                  <p>
+                    Learn from industry experts who bring years of experience
+                    and expertise to the table. Our instructors are passionate
+                    about sharing their knowledge and helping you succeed.
+                  </p>
+                </li>
+                <li class="pb-1 mt-3">
+                  <h5>3. Practical Application</h5>
+                  <p>
+                    We believe in practical learning that goes beyond theory.
+                    Our courses focus on real-world application, equipping you
+                    with the skills and knowledge needed to excel in your field.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add detail-2 section -->
+    <section class="detail-2 bg-light mt-5 mt-md-7">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="img-container rounded-5">
+              <img
+                src="assest/images/audience.jpg"
+                class="img-fluid mb-4 rounded-5"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div class="txt-container">
+              <h2 class="fw-bold pb-3 mt-n2">
+                Elevate Your Learning Journey with Expert Seminars
+              </h2>
+              <p>
+                Join our expert-led seminars and unlock new possibilities in
+                your personal and professional development. Our seminars cover a
+                diverse range of topics, from leadership and innovation to
+                personal growth and productivity.
+              </p>
+              <p>
+                Immerse yourself in engaging discussions, interactive workshops,
+                and valuable networking opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add invitation section -->
+    <section class="bg-light invitation mt-7">
+      <div class="container rounded-5 py-5">
+        <div class="row text-center">
+          <div class="col-10 btn-submit-wrapper offset-1">
+            <h1 class="fw-bold text-white">Join Us On December 22nd</h1>
+            <p class="text-white py-2">
+              We cordially invite you to attend a seminar on December 22nd,
+              where we will explore various topics and insights related to
+              <span class="fw-bold">advertising and marketing.</span> It will be
+              an engaging session where you can gain valuable knowledge about.
+              Don't miss out on this opportunity to enhance your skills and
+              broaden your horizons. Join us and be a part of this enriching
+              experience!
+            </p>
+            <button
+              class="btn-register rounded-4 btn btn-primary btn-lg py-2 px-4 mt-5"
+              type="submit"
+            >
+              Register Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add takeaway section -->
+    <section id="takeaways" class="bg-light mt-5 mt-md-7">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-12 txt-container">
+            <h2 class="display-6 fw-bold">Key Takeaways</h2>
+            <p class="lead fw-bold mt-4">
+              Here are some of the takeaways and benefits you can expect from
+              our programs.
+            </p>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-atom fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Scientific Insights</h5>
+              <p class="card-text">
+                Explore the latest scientific research and gain valuable
+                insights into various subjects, from physics to biology.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-key fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Cybersecurity Awareness</h5>
+              <p class="card-text">
+                Discover the importance of cybersecurity and learn how to
+                protect yourself and your digital assets from cyber threats.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-newspaper fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Industry Updates</h5>
+              <p class="card-text">
+                Stay informed about the latest news and updates in your
+                industry, keeping you ahead of the curve and facilitating
+                professional growth.
+              </p>
+            </div>
+          </div>
+          <div id="subscribe" class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-users fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Collaborative Networking</h5>
+              <p class="card-text">
+                Connect with professionals from diverse backgrounds and
+                industries to foster collaboration and expand your professional
+                network.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-handshake fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Partnership Opportunities</h5>
+              <p class="card-text">
+                Discover potential partnership opportunities with like-minded
+                individuals and organizations, opening doors to new
+                collaborations and ventures.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <div
+              class="takeaway-wrapper bg-white card border-0 rounded-0 mb-4 p-3"
+            >
+              <i
+                class="fas fa-chart-bar fa-3x text-primary bg-light rounded-circle p-3 my-4"
+              ></i>
+              <h5 class="card-title">Data-driven Insights</h5>
+              <p class="card-text">
+                Leverage data analytics to gain valuable insights and make
+                informed decisions, unlocking new possibilities for growth and
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add subscribe section -->
+    <section class="bg-light mt-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 offset-md-3 text-center">
+            <h2>
+              Subscribe to our email list and get updates from the experts
+            </h2>
+            <div class="register-form my-4">
+              <form>
+                <input
+                  type="email"
+                  class="form-control form-control-lg"
+                  placeholder="Enter email"
+                />
+                <div class="form-text">
+                  We will never share your email address
+                </div>
+              </form>
+            </div>
+            <div class="btn-submit-wrapper d-grid mb-4">
+              <button class="btn-register btn btn-primary btn-lg rounded-5">
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- add footer  -->
+    <footer class="footer text-bg-dark mt-4 py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="txt-container">
+              <h4 class="text-center text-primary">about us</h4>
+              <ul class="list-unstyled">
+                <li class="list-group-item">
+                  <p>
+                    1.About Us: Learn more about our mission and the story
+                    behind our delicious takeaway options.
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p>
+                    2. Menu: Browse through our mouth-watering menu filled with
+                    a variety of cuisines to satisfy your cravings.
+                  </p>
+                </li>
+                <li class="list-group-item">
+                  <p>
+                    3. Order Online: Conveniently place your order online and
+                    enjoy the ease of takeaway at your fingertips.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div
+              class="quik-links d-flex flex-column justify-content-center align-items-start"
+            >
+              <h4 class="text-center text-primary">Quick Links</h4>
+              <ul class="list-unstyled">
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#home">home</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#discover">Discover</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#summary">summary</a>
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#takeaways"
+                    >Takeaways</a
+                  >
+                </li>
+                <li class="list-group-item mb-2">
+                  <a class="text-decoration-none" href="#subscribe"
+                    >Subscribe</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-socail-link d-flex flex-column gap-2">
+              <h4 class="text-center text-primary">Connect</h4>
+              <div class="footer-icon-wrapper mt-4">
+                <i class="fab fa-facebook fa-3x text-white mx-2"></i>
+                <i class="fab fa-twitter fa-3x text-white mx-2"></i>
+                <i class="fab fa-linkedin fa-3x text-white mx-2"></i>
+                <i class="fab fa-instagram fa-3x text-white mx-2"></i>
+                <i class="fab fa-youtube fa-3x text-white mx-2 mt-3"></i>
+                <i class="fab fa-threads fa-3x text-white mx-2 mt-3"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assest/js/bootstrap.bundle.min.js"></script>
+    <script src="assest/js/main.js"></script>
+  </body>
+</html>

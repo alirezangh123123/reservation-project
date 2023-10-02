@@ -1,0 +1,41 @@
+// font
+$font-famliy-sans-serif: "Montserrat", sans-serif;
+// colors
+$primary: #f8b547;
+$secondary: #35353a;
+$light: #fbf9f5;
+$body-bg: $light;
+// spacers
+$spacer: 1rem !default;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 6,
+  7: $spacer * 8,
+  8: $spacer * 12,
+) !default;
+$headings-margin-bottom: $spacer * 1;
+$line-height-base: 1.7;
+// Navbar
+$navbar-nav-link-padding-x: 0.8rem;
+$navbar-padding-y: 1rem;
+$navbar-dark-color: #ffff;
+// Button
+$btn-border-radius: 50px;
+$btn-padding-x: 30px;
+$breadcrumb-padding-y: 10px;
+$navbar-toggler-border-radius: 5px;
+$headings-font-weight: bold;
+$navbar-dark-hover-color: $primary;
+// enable negative margins
+$enable-negative-margins: true;
+// enable shadow classes
+$enable-shadows: true;
+// change btn-close-color
+// equal card height
+$card-height: 100%;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,0 +1,148 @@
+// media query to fix navbar menu
+@import "../scss/bootsrap.scss";
+.nav-custom {
+  transition: all 0.5s ease;
+}
+@media screen and (max-width: 992px) {
+  .custom-navbar-menu {
+    display: none !important;
+  }
+}
+// delete default style of navbar toggler
+.custom-btn-navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.custom-btn-navbar-toggler:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+// custom close btn
+.off-close-btn {
+  --bs-btn-close-color: $primary !important;
+}
+// stickey navbar
+.custom-navbar-brand img {
+  transition: all 0.5s ease;
+}
+.social-media {
+  span {
+    span {
+      a {
+        i {
+          transition: all 0.5s ease;
+          font-size: 34px;
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+/////////header////////////
+header {
+  background: linear-gradient(
+      to bottom right,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(../images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+.btn-wrapper button:last-child {
+  transition: all 0.5s ease;
+  &:hover {
+    background-color: $light !important;
+    color: $dark !important;
+  }
+}
+// media query for image-slider
+@media screen and (max-width: 578px) {
+  .carousel-container {
+    #carouselExampleAutoplaying {
+      .carousel-inner {
+        .carousel-item {
+          img {
+            height: 260px;
+          }
+        }
+      }
+    }
+  }
+}
+//customize responsive btn
+@media screen and (max-width: 425px) {
+  .btn-wrapper {
+    .btn-header {
+      --bs-btn-padding-y: 0.5rem;
+      --bs-btn-padding-x: 1rem;
+      --bs-btn-font-size: 0.8rem;
+      --bs-btn-border-radius: var(--bs-border-radius-lg);
+    }
+  }
+  //form register btn
+  .btn-submit-wrapper {
+    .btn-register {
+      --bs-btn-padding-y: 0.5rem;
+      --bs-btn-padding-x: 0.7rem;
+      --bs-btn-font-size: 0.8rem;
+      --bs-btn-border-radius: var(--bs-border-radius-lg);
+    }
+  }
+  //register-form
+  .register-form {
+    form {
+      input {
+        margin-top: 1.1rem !important;
+        margin-bottom: 1.1rem !important;
+      }
+      .check-box {
+        input {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  //custom form-controll
+  .form-control {
+    min-height: calc(0.4rem + 1rem + calc(var(--bs-border-width) * 2));
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    border-radius: var(--bs-border-radius-lg);
+  }
+}
+// invitation section style
+.invitation{
+.container{
+  background:linear-gradient(
+    to bottom right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ), url(../images/invitation-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+}
+// media query invitation section
+@media screen and (max-width:577px) {
+  .invitation{
+    .container{
+      border-radius: 0px !important;
+    }
+  }
+}
+// footer style 
+.footer{
+  .footer-socail-link{
+    .footer-icon-wrapper{
+      i{
+        color:$light !important;
+        transition: all .3s ease;
+        border-radius: 1px;
+        &:hover{
+          color:$primary !important;
+        }
+      }
+    }
+  }
+}
