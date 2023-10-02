@@ -14320,3 +14320,13 @@ header {
     border-radius: var(--bs-border-radius-lg);
   }
 }
+.invitation .container {
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/invitation-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 577px) {
+  .invitation .container {
+    border-radius: 0px !important;
+  }
+}
