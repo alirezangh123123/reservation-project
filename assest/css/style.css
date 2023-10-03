@@ -1,5 +1,5 @@
 .nav-custom {
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
 }
 
 @media screen and (max-width: 992px) {
@@ -24,22 +24,23 @@
 }
 
 .custom-navbar-brand img {
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
 }
 
 .social-media span span a i {
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
   font-size: 34px;
   color: #f8b547;
 }
 
 header {
+  transition: 0.6s;
   background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-background.jpg) center center no-repeat;
   background-size: cover;
 }
 
 .btn-wrapper button:last-child {
-  transition: all 0.5s ease;
+  transition: all 0.6s ease;
 }
 .btn-wrapper button:last-child:hover {
   background-color: #fbf9f5 !important;
@@ -90,9 +91,68 @@ header {
 }
 .footer .footer-socail-link .footer-icon-wrapper i {
   color: #fbf9f5 !important;
-  transition: all 0.3s ease;
+  transition: all 0.6s ease;
   border-radius: 1px;
 }
 .footer .footer-socail-link .footer-icon-wrapper i:hover {
   color: #f8b547 !important;
+}
+
+nav .header-mode .sun {
+  transition: 0.8s !important;
+  transform: translateX(-400px);
+}
+
+.moon {
+  fill: #fbf9f5;
+  transition: 0.8s !important;
+}
+
+.dark .moon {
+  transform: translateX(-400px);
+}
+
+.dark .sun {
+  fill: #fbf9f5;
+  transform: translateX(50px) !important;
+}
+
+body:not(div.offcanvas) {
+  transition: all 0.6s !important;
+}
+
+section {
+  transition: all 0.6s !important;
+}
+
+.dark {
+  background-color: #35353a !important;
+}
+
+.dark header {
+  background: linear-gradient(to bottom right, rgba(151, 148, 148, 0.8), rgba(0, 0, 0, 0.8)), url(../images/header-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.dark .register-form h2 {
+  color: #fbf9f5 !important;
+}
+.dark .register-form .form-text {
+  color: #fbf9f5 !important;
+}
+
+.dark section {
+  background-color: #35353a !important;
+  color: #fbf9f5 !important;
+}
+
+.dark .list-wrapper div,
+.dark .list-wrapper ul {
+  background-color: #35353a !important;
+  color: #fbf9f5 !important;
+}
+
+.dark #takeaways .takeaway-wrapper {
+  background-color: #35353a !important;
+  color: #fbf9f5 !important;
 }
