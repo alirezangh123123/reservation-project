@@ -10,14 +10,14 @@ const darkModeFlag = false;
 
 document.addEventListener("scroll", function () {
   if (document.documentElement.scrollTop > 100) {
-    getNavBarBrand.style.height = "56px";
+    getNavBarBrand.style.height = "47px";
     getSocailIcons[0].classList.remove("fa-square-facebook");
     getSocailIcons[0].classList.add("fa-circle", "fa-facebook");
     getSocailIcons[1].classList.remove("fa-square-twitter");
     getSocailIcons[1].classList.add("fa-circle", "fa-twitter");
     getNav.classList.add("bg-dark");
   } else {
-    getNavBarBrand.style.height = "43px";
+    getNavBarBrand.style.height = "38px";
     getSocailIcons[0].classList.add("fa-square-facebook");
     getSocailIcons[0].classList.remove("fa-circle", "fa-facebook");
     getSocailIcons[1].classList.remove("fa-circle", "fa-twitter");
